@@ -51,7 +51,7 @@ public class DeptController
 	@RequestMapping(value = "/test/dept/get/{id}", method = RequestMethod.GET)
 	public Dept getTest(@PathVariable("id") Long id)
 	{
-		return new Dept("dept01", "db_source01");
+		return new Dept("dept01", "db_source03");
 	}
 
 	@RequestMapping(value = "/test/dept/list", method = RequestMethod.GET)
