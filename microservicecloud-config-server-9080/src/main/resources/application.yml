@@ -1,0 +1,29 @@
+server:
+  port: 9080
+  
+spring:
+   application:
+    name: microservicecloud-config-server 
+   cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/zhufeng8407/microservicecloud-config-server-9080
+          username: zhufeng.zhu@163.com 
+          password: mumumu8407
+      
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7001:7001/eureka/,http://eureka7002:7002/eureka/,http://eureka7003:7003/eureka/
+  instance:
+    instance-id: microservicecloud-config-server
+    prefer-ip-address: true #显示IP
+      
+ 
+info: 
+  app.name: atguigu-microservicecloud
+  company.name: www.atguigu.com
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
+
